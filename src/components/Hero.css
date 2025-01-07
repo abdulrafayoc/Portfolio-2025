@@ -1,42 +1,86 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .hero-container {
-    @apply bg-white text-black p-8 font-serif;
-  }
+  background-image: url("../assets/hero-bg.png");
+  @apply text-black px-40 font-serif h-screen;
+  @apply flex flex-col justify-center items-center gap-6 mx-0;
+}
+
+.hero-title {
+  @apply flex flex-row justify-stretch items-end w-full gap-6 ;
+}
+
+.hero-sec-title {
+  @apply flex flex-row justify-stretch items-start w-full gap-6;
+}
+
+.title-line {
+  @apply block text-[25vw] pt-12 text-nowrap;
+  font-family: "Humane", sans-serif;
+  font-style: normal;
+  line-height: .6;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.hero-intro {
+  @apply flex flex-col items-center justify-center;
+  font-family: "Imbue", sans-serif;
+ 
+}
+
+.hero-greeting {
+  @apply text-6xl font-normal self-stretch m-0;
+}
+
+.hero-info {
+  @apply text-4xl font-medium self-stretch m-0 w-full;
+}
+
+.hero-statement {
+  @apply text-4xl font-medium self-stretch m-0 text-right;
+  font-family: "Imbue", sans-serif;
+}
+
+/* ---------- Moblie CSS ----------- */
+.hero-container-mobile {
+  background-image: url("../assets/hero-bg.png");
+  @apply text-black px-4 font-serif h-screen;
+  @apply flex flex-col justify-center items-center gap-16;
+}
+
+.hero-title-mobile {
+  @apply mt-24 flex flex-col items-start w-full gap-8;
+
+  /* Large Text */
+  @apply text-[32vw] text-nowrap;
+  font-family: "Humane", sans-serif;
+  font-style: normal;
+  line-height: .6;
+}
+
+.title-line-mobile {
+  @apply w-full;
   
-  .hero-title {
-    @apply text-6xl font-bold leading-tight mb-8;
-  }
-  
-  .title-line {
-    @apply block;
-  }
-  
-  .hero-content {
-    @apply mb-8;
-  }
-  
-  .hero-greeting {
-    @apply text-xl font-semibold;
-  }
-  
-  .hero-name {
-    @apply text-2xl font-bold;
-  }
-  
-  .hero-description {
-    @apply text-lg;
-  }
-  
-  .hero-statement {
-    @apply text-lg max-w-2xl;
-  }
-  
-  /* Add some texture to mimic the paper background */
-  .hero-container::before {
-    content: '';
-    @apply absolute inset-0 bg-gray-100 opacity-10 pointer-events-none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath d='M1 3h1v1H1V3zm2-2h1v1H3V1z' fill='%23000000' fill-opacity='0.4'/%3E%3C/svg%3E");
-  }
+}
+.title-line2-mobile {
+  @apply w-full text-right;
+}
+
+.hero-intro-mobile {
+  @apply flex flex-col items-start justify-center gap-3;
+  font-family: "Imbue", sans-serif;
+ 
+}
+
+.hero-greeting-mobile {
+  font-family: "Humane", sans-serif;
+  @apply text-6xl font-medium self-stretch m-0;
+}
+
+.hero-info-mobile {
+  @apply text-4xl font-medium self-stretch m-0 w-full;
+}
+.hero-statement-mobile {
+  @apply text-3xl font-medium self-stretch m-0;
+  font-family: "Imbue", sans-serif;
+}

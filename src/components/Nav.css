@@ -1,0 +1,34 @@
+.nav {
+    @apply flex absolute top-0 left-0 right-0 z-50 justify-between items-center px-10 py-5;
+}
+
+.menu-btn {
+    @apply flex justify-center items-center w-16 h-16 rounded-full mix-blend-difference text-white cursor-pointer bg-black;
+}
+
+.menu-i {
+    @apply w-8 text-white mix-blend-difference;
+}
+
+.menu-btn:hover {
+    @apply bg-[#ecd448];
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .nav {
+        @apply px-5 py-3;
+    }
+
+    .nav-logo {
+        @apply mb-3;
+    }
+
+    .menu-btn {
+        @apply w-12 h-12;
+    }
+
+    .menu-i {
+        @apply w-6;
+    }
+}
