@@ -1,0 +1,18 @@
+.services-container {
+    @apply bg-black min-h-screen flex flex-col items-center justify-center text-center text-white relative font-imbue;
+    background-image: url('../assets/serv-bg.png');
+}
+.vertical-text {
+    @apply text-white;
+    @apply text-5xl -mt-8 font-imbue font-light;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.services {
+    @apply text-5xl mt-20;
+}
+
+.service {
+    @apply my-3 font-imbue;
+}
