@@ -1,6 +1,6 @@
 .hero-container {
   background-image: url("../assets/hero-bg.png");
-  @apply text-black px-40 font-serif h-screen;
+  @apply text-black xl:px-40 lg:px-36 px-20 font-serif  min-h-[768px] 2xl:min-h-[770px] h-screen;
   @apply flex flex-col justify-center items-center gap-6 mx-0;
 }
 
@@ -14,18 +14,12 @@
 
 .title-line {
   @apply block text-[25vw] pt-12 text-nowrap;
-  font-family: "Humane", sans-serif;
-  font-style: normal;
-  line-height: .6;
-  margin-top: 0;
-  margin-bottom: 0;
+  @apply font-humane font-normal leading-[0.6] mt-0 mb-0;
 }
 
 
 .hero-intro {
-  @apply flex flex-col items-center justify-center;
-  font-family: "Imbue", sans-serif;
- 
+  @apply flex flex-col items-center justify-center font-imbue; 
 }
 
 .hero-greeting {
@@ -33,18 +27,19 @@
 }
 
 .hero-info {
-  @apply text-4xl font-medium self-stretch m-0 w-full;
+  @apply lg:text-4xl text-3xl  font-medium self-stretch m-0 w-full;
 }
 
 .hero-statement {
-  @apply text-4xl font-medium self-stretch m-0 text-right;
-  font-family: "Imbue", sans-serif;
+  @apply lg:text-4xl text-3xl font-medium self-stretch m-0 text-right font-imbue;
 }
+
+
 
 /* ---------- Moblie CSS ----------- */
 .hero-container-mobile {
   background-image: url("../assets/hero-bg.png");
-  @apply text-black px-4 font-serif h-screen;
+  @apply text-black px-4 font-serif min-h-[768px] h-screen;
   @apply flex flex-col justify-center items-center gap-16;
 }
 
@@ -52,10 +47,8 @@
   @apply mt-24 flex flex-col items-start w-full gap-8;
 
   /* Large Text */
-  @apply text-[32vw] text-nowrap;
-  font-family: "Humane", sans-serif;
-  font-style: normal;
-  line-height: .6;
+  @apply text-[32vw] text-nowrap font-humane font-normal leading-[0.6];
+
 }
 
 .title-line-mobile {
@@ -67,20 +60,16 @@
 }
 
 .hero-intro-mobile {
-  @apply flex flex-col items-start justify-center gap-3;
-  font-family: "Imbue", sans-serif;
- 
+  @apply flex flex-col items-start justify-center gap-3 font-imbue; 
 }
 
 .hero-greeting-mobile {
-  font-family: "Humane", sans-serif;
-  @apply text-6xl font-medium self-stretch m-0;
+  @apply text-6xl font-medium self-stretch m-0 font-humane;
 }
 
 .hero-info-mobile {
   @apply text-4xl font-medium self-stretch m-0 w-full;
 }
 .hero-statement-mobile {
-  @apply text-3xl font-medium self-stretch m-0;
-  font-family: "Imbue", sans-serif;
+  @apply text-3xl font-medium self-stretch m-0 font-imbue;
 }

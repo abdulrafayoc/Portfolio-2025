@@ -3,7 +3,7 @@ import './App.css'
 import Hero from './components/Hero.jsx'
 import Nav from './components/Nav.jsx'
 import './assets/fonts/Humane-Medium.ttf'
-import GooeyCursor from './components/GooeyCursor.jsx'
+import MyServices from './components/MyServices.jsx'
 
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
     <>
       <Nav/>
       <Hero />
+      <MyServices/>
       {/* <GooeyCursor /> */}
     </>
   )

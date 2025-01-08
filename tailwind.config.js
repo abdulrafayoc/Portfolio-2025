@@ -4,9 +4,15 @@ export default {
     "./index.html",
     "./src/components/Hero.jsx",
     "./src/App.jsx",
+    "./src/components/MyServices.jsx",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        imbue: ['Imbue', 'serif'],
+        humane: ['Humane', 'sans-serif'], 
+      },
+    },
   },
   plugins: [],
 }
