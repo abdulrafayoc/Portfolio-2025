@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .hero-container {
   background-image: url("../assets/hero-bg.png");
   @apply text-black xl:px-40 lg:px-36 px-20 font-serif  min-h-[768px] 2xl:min-h-[770px] h-screen;

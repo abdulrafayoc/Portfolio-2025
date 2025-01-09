@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .services-container {
     @apply bg-black min-h-screen flex flex-col items-center justify-center text-center text-white relative font-imbue;
+    @apply xl:px-40 lg:px-36 px-20;
     background-image: url('../assets/serv-bg.png');
 }
 .vertical-text {

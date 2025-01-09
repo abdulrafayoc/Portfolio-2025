@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cases-container {
+  @apply bg-black min-h-screen flex flex-col items-center justify-center;
+  @apply text-center text-white relative font-imbue;
+  @apply xl:px-40 lg:px-36 px-20;
+  background-image: url('../assets/serv-bg.png');
+}
+
+.process-text {
+  @apply text-white text-5xl -mt-32 font-imbue font-light;
+}
+
+.cases-wrapper {
+  @apply w-full flex flex-col items-center justify-center gap-10;
+}
+
+.heading {
+  @apply text-5xl mt-20 my-3 font-imbue;
+}
+
+.cases {
+  @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4;
+}
+
+.case {
+    @apply relative w-48 h-60;
+}
+
+.case-image {
+  @apply w-full h-full object-cover filter grayscale transition-all duration-300 group-hover:grayscale-0 ease-out;
+}
+
+

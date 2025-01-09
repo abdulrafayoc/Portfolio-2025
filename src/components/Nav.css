@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .nav {
     @apply flex absolute top-0 left-0 right-0 z-50 justify-between items-center px-10 py-5;
 }
