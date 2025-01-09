@@ -10,7 +10,8 @@ export default {
     extend: {
       fontFamily: {
         imbue: ['Imbue', 'serif'],
-        humane: ['Humane', 'sans-serif'], 
+        humane: ['Humane', 'sans-serif'],
+        dmSans: ['DM Sans', 'sans-serif'],
       },
     },
   },

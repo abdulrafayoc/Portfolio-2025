@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contact-container {
+  @apply bg-black flex flex-col text-white relative font-imbue;
+  @apply xl:px-40 lg:px-36 px-20;
+}
+
+.wrapper {
+  @apply w-full flex flex-row items-center justify-between;
+}
+
+.social-links {
+  @apply flex flex-col gap-2 pt-8;
+}
+
+.social-link {
+  @apply text-4xl font-imbue cursor-pointer hover:opacity-80 transition-opacity;
+}
+
+.form-container {
+  @apply flex items-center justify-end w-96 max-w-lg;
+  @apply mt-6 font-dmSans;
+}
+
+.contact-form {
+  @apply flex flex-col gap-1 w-full;
+}
+
+.form-input {
+  @apply bg-transparent border-b border-white/20 px-2 py-3;
+  @apply text-white placeholder-white/60;
+  @apply focus:outline-none focus:border-white;
+  @apply transition-colors;
+}
+
+.message-input {
+  @apply h-24 resize-none;
+}
+
+.connect-button {
+  @apply bg-white text-black px-6 py-2 mt-4 rounded-lg;
+  @apply hover:bg-white/90 transition-colors;
+  @apply w-fit ml-auto font-medium;
+}
+
+.footer-info {
+  @apply flex justify-between items-center py-4 mt-auto;
+  @apply text-sm text-white/60;
+}
+
+.edition-text {
+  @apply font-imbue;
+}
+
+.time-text {
+  @apply font-mono;
+}

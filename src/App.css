@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @font-face {
   font-family: 'Humane';
   src: local("Humane-Medium"), url("./assets/fonts/Humane-Medium.ttf") format("truetype");  font-style: normal;
 }
 
 body {
-  font-family: 'Imbue', sans-serif;
+  font-family: 'Imbue', serif;
 }

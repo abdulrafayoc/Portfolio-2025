@@ -1,0 +1,39 @@
+.quote-container {
+  @apply h-[60vh] flex flex-col items-center justify-between text-center relative;
+  @apply xl:px-40 lg:px-36 px-20 py-9;
+  background-image: url('../assets/quote-bg.png')
+}
+
+.quote-wrapper {
+  @apply flex flex-row items-center justify-between gap-0 w-full;
+}
+
+.quote {
+  @apply flex flex-row items-center justify-center gap-4;
+}
+.quote-text {
+  @apply text-4xl font-imbue;
+}
+
+.quote-svg {
+  @apply fill-yellow-400;
+}
+
+.quote-author {
+  @apply text-4xl font-imbue cursor-vertical-text;
+}
+
+.cta {
+    @apply w-3/4 h-1/2 flex flex-col items-center justify-center;
+  @apply text-7xl font-imbue font-bold relative;
+}
+
+.cta-top {
+    @apply absolute top-0 left-0;
+}
+.cta-line path {
+ @apply stroke-2;
+}
+.cta-bot {
+    @apply absolute bottom-0 right-0;
+}
