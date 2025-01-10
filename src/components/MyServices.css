@@ -5,17 +5,18 @@
 .services-container {
     @apply bg-black min-h-screen flex flex-col items-center justify-center text-center text-white relative font-imbue;
     @apply xl:px-40 lg:px-36 px-20;
+    @apply  text-3xl md:text-4xl lg:text-5xl;
     background-image: url('../assets/serv-bg.png');
 }
 .vertical-text {
     @apply text-white;
-    @apply text-5xl -mt-8 font-imbue font-light;
+    @apply -mt-8 font-imbue font-light;
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
 
 .services {
-    @apply text-5xl mt-20;
+    @apply mt-20;
 }
 
 .service {

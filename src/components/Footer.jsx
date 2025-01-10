@@ -23,18 +23,18 @@ const Footer = () => {
           <form className="contact-form">
             <input
               type="text"
-              placeholder="Your name *"
+              placeholder="Your name*"
               className="form-input"
               required
             />
             <input
               type="email"
-              placeholder="Your email *"
+              placeholder="Your email*"
               className="form-input"
               required
             />
             <textarea
-              placeholder="Your message *"
+              placeholder="Your message*"
               className="form-input message-input"
               required
             />

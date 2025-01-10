@@ -8,7 +8,7 @@ const Cases = () => {
     { id: 2, image: case1 },
     { id: 3, image: case1 },
     { id: 4, image: case1 },
-    { id: 5, image: case1 },
+    { id: 5, image: case1 },   
   ];
 
   return (

@@ -64,7 +64,7 @@
 }
 
 .hero-intro-mobile {
-  @apply flex flex-col items-start justify-center gap-3 font-imbue; 
+  @apply flex flex-col pb-0 sm:pb-4 items-start justify-center gap-3 font-imbue; 
 }
 
 .hero-greeting-mobile {

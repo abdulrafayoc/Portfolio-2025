@@ -16,7 +16,7 @@ const Quote = () => {
       </div>
       <div className="cta">
         <div className="cta-top">Don't hesitate</div>
-        <svg className="cta-line" xmlns="http://www.w3.org/2000/svg" width="378" height="47" viewBox="0 0 378 47" fill="none">
+        <svg className="cta-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 378 47" fill="none">
             <path d="M1 1L377 46" stroke="black"/>
         </svg>
         <div className="cta-bot">to say Hello</div>

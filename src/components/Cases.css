@@ -3,30 +3,30 @@
 @tailwind utilities;
 
 .cases-container {
-  @apply bg-black min-h-screen flex flex-col items-center justify-center;
+  @apply bg-black min-h-min max-h-screen flex flex-col items-start justify-center;
   @apply text-center text-white relative font-imbue;
-  @apply xl:px-40 lg:px-36 px-20;
+  @apply xl:px-40 lg:px-36 md:px-20 px-3;
   background-image: url('../assets/serv-bg.png');
 }
 
 .process-text {
-  @apply text-white text-5xl -mt-32 font-imbue font-light;
+  @apply text-white text-3xl md:text-4xl pt-3 md:pt-5 font-imbue font-light;
 }
 
 .cases-wrapper {
-  @apply w-full flex flex-col items-center justify-center gap-10;
+  @apply w-full pb-10 sm:pb-16 pt-16 flex flex-col items-center justify-center gap-3 md:gap-8;
 }
 
 .heading {
-  @apply text-5xl mt-20 my-3 font-imbue;
+  @apply text-3xl sm:text-4xl md:text-5xl my-3 font-imbue;
 }
 
 .cases {
-  @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4;
+  @apply flex gap-4 flex-wrap justify-center;
 }
 
 .case {
-    @apply relative w-48 h-60;
+    @apply relative w-32 h-32 md:w-48 md:h-60;
 }
 
 .case-image {

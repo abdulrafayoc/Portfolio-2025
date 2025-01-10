@@ -4,15 +4,15 @@
 
 .contact-container {
   @apply bg-black flex flex-col text-white relative font-imbue;
-  @apply xl:px-40 lg:px-36 px-20;
+  @apply xl:px-40 lg:px-36 md:px-20 sm:px-10 px-3;
 }
 
 .wrapper {
-  @apply w-full flex flex-row items-center justify-between;
+  @apply w-full flex flex-col-reverse md:flex-row items-center justify-between;
 }
 
 .social-links {
-  @apply flex flex-col gap-2 pt-8;
+  @apply flex flex-col gap-2 pt-8 self-start;
 }
 
 .social-link {
@@ -20,8 +20,8 @@
 }
 
 .form-container {
-  @apply flex items-center justify-end w-96 max-w-lg;
-  @apply mt-6 font-dmSans;
+  @apply flex items-center justify-end w-96  w-full md:max-w-md lg:max-w-lg ;
+  @apply mt-6 font-dmSans ;
 }
 
 .contact-form {
