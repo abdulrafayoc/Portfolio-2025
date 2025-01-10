@@ -2,37 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navigation Bar */
 .nav {
-    @apply flex absolute top-0 left-0 right-0 z-50 justify-between items-center px-10 py-5;
+  @apply font-imbue flex fixed top-0 left-0 right-0 z-50 justify-between items-center;
+  @apply md:px-10 md:py-5 px-5 py-3;
+}
+
+.nav-logo {
+  @apply text-white font-bold text-lg md:text-xl;
 }
 
 .menu-btn {
-    @apply flex justify-center items-center w-16 h-16 rounded-full mix-blend-difference text-white cursor-pointer bg-black;
+  @apply rounded-full bg-blend-difference mix-blend-difference cursor-pointer bg-white;
+  @apply flex justify-center items-center w-12 h-12 md:w-16 md:h-16 z-10;
 }
 
 .menu-i {
-    @apply w-8 text-white mix-blend-difference;
+  @apply w-6 md:w-8 mix-blend-difference;
 }
 
-.menu-btn:hover {
-    @apply bg-[#ecd448];
+/* Popup Menu */
+.popup-menu {
+  background-image: url("../assets/serv-bg.png");
+  @apply font-imbue fixed top-[-100%] right-0 w-fit md:w-fit h-fit p-12;
+  @apply bg-gray-950 text-white z-50;
+  @apply flex flex-col items-center justify-start;
+  @apply rounded-b-[2rem] shadow-lg transition-transform duration-300 ease-in-out;
+  @apply drop-shadow-2xl;
+  @apply backdrop-filter backdrop-blur-0;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    .nav {
-        @apply px-5 py-3;
-    }
+.popup-menu.open {
+  @apply top-0;
+}
 
-    .nav-logo {
-        @apply mb-3;
-    }
+.popup-menu.closed {
+  @apply top-[-100%];
+}
 
-    .menu-btn {
-        @apply w-12 h-12;
-    }
+.close-btn {
+  @apply text-white text-2xl font-bold absolute top-5 right-10 cursor-pointer;
+  @apply rounded-full bg-blend-difference mix-blend-difference cursor-pointer bg-white;
+  @apply flex justify-center items-center w-12 h-12 md:w-16 md:h-16 z-10;
+}
 
-    .menu-i {
-        @apply w-6;
-    }
+.menu-content {
+  @apply flex flex-col items-start justify-center mt-16 text-center w-full;
+}
+
+.menu-title {
+  @apply w-3/4 flex flex-row justify-between gap-8 text-6xl mb-4 pr-20;
+}
+
+.socials-heading {
+  @apply text-2xl mt-6 mb-3;
+}
+.social-links-nav {
+  @apply flex flex-row gap-4;
+  @apply text-2xl;
+}
+.social-links-nav div {
+  @apply text-3xl text-white opacity-65 font-extralight hover:opacity-100 hover:underline transition-opacity duration-200 cursor-pointer;
+}
+
+.location-info {
+  @apply font-mono mt-12 text-sm text-gray-400 self-center;
+}
+
+.location-info .location {
+  @apply font-bold;
 }

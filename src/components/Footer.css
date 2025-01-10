@@ -12,7 +12,7 @@
 }
 
 .social-links {
-  @apply flex flex-col gap-2 pt-8 self-start;
+  @apply flex flex-col gap-2 pt-12 self-start;
 }
 
 .social-link {
@@ -51,7 +51,7 @@
 }
 
 .edition-text {
-  @apply font-imbue;
+  @apply font-mono;
 }
 
 .time-text {

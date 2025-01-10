@@ -12,6 +12,7 @@ export default {
         imbue: ['Imbue', 'serif'],
         humane: ['Humane', 'sans-serif'],
         dmSans: ['DM Sans', 'sans-serif'],
+        mono: ['Space Mono', 'monospace'],
       },
     },
   },

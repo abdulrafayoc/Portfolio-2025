@@ -1,6 +1,7 @@
 .quote-container {
-  @apply h-[60vh] min-h-96 flex flex-col items-center justify-between text-center relative;
+  @apply h-[60vh] bg-gray-50 min-h-96 flex flex-col items-center justify-between text-center relative;
   @apply xl:px-40 lg:px-36 md:px-20 px-3 py-9;
+  @apply rounded-b-[4rem];
   background-image: url('../assets/quote-bg.png')
 }
 
