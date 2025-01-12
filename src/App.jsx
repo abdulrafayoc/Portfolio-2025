@@ -1,27 +1,21 @@
-import { useState } from 'react'
-import './App.css'
-import Hero from './components/Hero.jsx'
-import Nav from './components/Nav.jsx'
-import './assets/fonts/Humane-Medium.ttf'
-import MyServices from './components/MyServices.jsx'
-import Cases from './components/Cases.jsx'
-import Quote from './components/Quote.jsx'
-import Footer from './components/Footer.jsx'
+import { useState, useEffect } from "react";
+import "./App.css";
+
+import Home from "./pages/Home.jsx";
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    
+  }, []);
 
   return (
     <>
-      <Nav/>
-      <Hero />
-      <MyServices/>
-      <Cases/>
-      <Quote/>
-      <Footer/>
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

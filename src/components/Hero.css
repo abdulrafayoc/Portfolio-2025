@@ -4,16 +4,20 @@
 
 .hero-container {
   background-image: url("../assets/hero-bg.png");
-  @apply text-black bg-gray-50 xl:px-40 lg:px-36 px-20 font-serif  min-h-[768px] 2xl:min-h-[770px] h-screen;
-  @apply flex flex-col justify-center items-center gap-6 mx-0;
+  @apply relative text-black bg-gray-50 xl:px-40 lg:px-36 px-20 font-serif  min-h-[768px] 2xl:min-h-[770px] h-screen;
+  @apply flex flex-col justify-center items-center gap-6 mx-0 ;
+}
+
+.hero-splash {
+  @apply absolute top-0 right-0 opacity-60;
 }
 
 .hero-title {
-  @apply flex flex-row justify-stretch items-end w-full gap-6 ;
+  @apply flex flex-row justify-stretch items-end w-full gap-6 z-10 ;
 }
 
 .hero-sec-title {
-  @apply flex flex-row justify-stretch items-start w-full gap-6;
+  @apply flex flex-row justify-stretch items-start w-full gap-6 z-10;
 }
 
 .title-line {
@@ -43,14 +47,15 @@
 /* ---------- Moblie CSS ----------- */
 .hero-container-mobile {
   background-image: url("../assets/hero-bg.png");
-  @apply text-black px-4 font-serif min-h-[768px] h-screen;
+  @apply bg-white text-black px-4 font-serif min-h-[768px] h-screen;
   @apply flex flex-col justify-center items-center gap-16;
 }
 
+.hero-splash-mobile {
+  @apply absolute top-0 right-0 opacity-60;
+}
 .hero-title-mobile {
-  @apply mt-24 flex flex-col items-start w-full gap-8;
-
-  /* Large Text */
+  @apply mt-24 flex flex-col items-start w-full gap-8 z-10;
   @apply text-[32vw] text-nowrap font-humane font-normal leading-[0.6];
 
 }
@@ -64,11 +69,11 @@
 }
 
 .hero-intro-mobile {
-  @apply flex flex-col pb-0 sm:pb-4 items-start justify-center gap-3 font-imbue; 
+  @apply flex flex-col pb-0 sm:pb-4 items-start justify-center gap-3 font-imbue z-10; 
 }
 
 .hero-greeting-mobile {
-  @apply text-6xl font-medium self-stretch m-0 font-humane;
+  @apply text-5xl  font-[600] self-stretch m-0 font-imbue;
 }
 
 .hero-info-mobile {

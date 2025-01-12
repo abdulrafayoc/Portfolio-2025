@@ -1,12 +1,14 @@
 import React from "react";
 import "./Hero.css";
 import { useMediaQuery } from "react-responsive";
+import splash from "../assets/splash-1.png";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   const MobileHero = () => (
     <div className="hero-container-mobile">
+      <img src={splash} alt="Splash" className="hero-splash-mobile" />
       <div className="hero-title-mobile">
         <span className="title-line-mobile">WEB DESIGNER</span>
         <span className="title-line2-mobile">& DEVELOPER</span>
@@ -27,6 +29,7 @@ const Hero = () => {
 
   const DesktopHero = () => (
     <div className="hero-container">
+      <img src={splash} alt="Splash" className="hero-splash" />
       <div className="hero-title">
         <span className="title-line">WEB DESIGNER</span>
         <div className="hero-intro">

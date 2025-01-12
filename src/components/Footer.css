@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .contact-container {
-  @apply bg-black flex flex-col text-white relative font-imbue;
+  @apply bg-black flex flex-col text-white sticky -z-10 bottom-0 font-imbue;
   @apply xl:px-40 lg:px-36 md:px-20 sm:px-10 px-3;
 }
 
