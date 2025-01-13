@@ -14,8 +14,10 @@ const Home = () => {
       <Hero />
       <MyServices />
       <Cases />
+      <div className="relative">
       <Quote />
       <Footer />
+      </div>
     </div>
   );
 };

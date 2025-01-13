@@ -10,11 +10,11 @@
 }
 
 .ani-canvas-1 {
-    @apply w-full md:w-1/2 h-full rotate-[-4deg] absolute top-auto right-auto left-auto opacity-40;
+    @apply w-full md:w-1/2 h-full rotate-[-4deg] absolute top-auto right-auto left-auto opacity-50;
 }
 
 .ani-canvas-2 {
-    @apply  w-full md:w-1/2 h-full rotate-[8deg] absolute -top-4 right-auto -left-9  md:left-[22vw] opacity-60;
+    @apply  w-[110vw] md:w-1/2 h-full rotate-[8deg] absolute -top-4 right-auto -left-14  md:left-[22vw] opacity-70;
 }
 .vertical-text {
     @apply text-white;

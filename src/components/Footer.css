@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .contact-container {
-  @apply bg-black flex flex-col text-white sticky -z-10 bottom-0 font-imbue;
+  @apply bg-black flex flex-col text-white sticky bottom-0 font-imbue;
   @apply xl:px-40 lg:px-36 md:px-20 sm:px-10 px-3;
 }
 
@@ -16,7 +16,19 @@
 }
 
 .social-link {
-  @apply text-4xl font-imbue cursor-pointer hover:opacity-80 transition-opacity;
+  @apply text-4xl font-imbue cursor-pointer transition-opacity;
+}
+
+.social-link:hover {
+  animation: vibrate .1s ease-in-out infinite;
+}
+
+@keyframes vibrate {
+  0% { transform: translate(0, 0); filter: blur(.7px); }
+  20% { transform: translate(-.5px, -1px); filter: blur(.7px); }
+  50% { transform: translate(.5px, 1px); filter: blur(.7px); }
+  75% { transform: translate(-1px, .5px); filter: blur(.7px); }
+  100% { transform: translate(1px, -.5px); filter: blur(.7px); }
 }
 
 .form-container {
