@@ -1,15 +1,24 @@
 import React from "react";
 import "./MyServices.css";
-
+import { Canvas } from "@react-three/fiber";
+import TextPathAnimation from "./TextPathAnimation";
 
 const MyServices = () => {
-
-return (
+  return (
     <div className="services-container">
-
-      <div className="vertical-text">
-        Just About
+      <div className="ani-canvas-1">
+        <Canvas>
+          <ambientLight />
+          <TextPathAnimation  scale={.23} />
+        </Canvas>
       </div>
+      <div className="ani-canvas-2">
+        <Canvas>
+          <ambientLight />
+          <TextPathAnimation scale={.23} />
+        </Canvas>
+      </div>
+      <div className="vertical-text">Just About</div>
 
       <div className="services">
         <p className="service">Web Design</p>
@@ -21,7 +30,6 @@ return (
       </div>
     </div>
   );
-
 };
 
 export default MyServices;

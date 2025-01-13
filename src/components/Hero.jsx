@@ -24,6 +24,7 @@ const Hero = () => {
           drive growth and enhance user experiences.
         </p>
       </div>
+      
     </div>
   );
 
@@ -47,6 +48,7 @@ const Hero = () => {
         </p>
         <span className="title-line">& DEVELOPER</span>
       </div>
+      
     </div>
   );
 

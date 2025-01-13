@@ -5,8 +5,16 @@
 .services-container {
     @apply bg-black min-h-screen flex flex-col items-center justify-center text-center text-white relative font-imbue;
     @apply xl:px-40 lg:px-36 px-20;
-    @apply  text-3xl md:text-4xl lg:text-5xl;
+    @apply  text-3xl md:text-4xl lg:text-5xl overflow-hidden;
     background-image: url('../assets/serv-bg.png');
+}
+
+.ani-canvas-1 {
+    @apply w-full md:w-1/2 h-full rotate-[-4deg] absolute top-auto right-auto left-auto opacity-40;
+}
+
+.ani-canvas-2 {
+    @apply  w-full md:w-1/2 h-full rotate-[8deg] absolute -top-4 right-auto -left-9  md:left-[22vw] opacity-60;
 }
 .vertical-text {
     @apply text-white;

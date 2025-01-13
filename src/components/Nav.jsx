@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Nav.css";
 import menu from "../assets/menu.png";
 import close from "../assets/close.png";
+import logo from "../assets/logo.png";
+
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +16,8 @@ const Nav = () => {
     <>
       <div className="nav">
         <div className="nav-logo">
-          <h1>Abdul Rafay</h1>
+          <img src={logo} alt="logo" />
+          
         </div>
         <div className="menu-btn" onClick={toggleMenu}>
           <img className="menu-i" src={menu} alt="menu" />

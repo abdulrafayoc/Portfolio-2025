@@ -2,9 +2,9 @@
 export default {
   content: [
     "./index.html",
-    "./src/components/Hero.jsx",
-    "./src/App.jsx",
-    "./src/components/MyServices.jsx",
+    "./src/components/**/*.{js,jsx,ts,tsx}",
+    "./src/pages/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {

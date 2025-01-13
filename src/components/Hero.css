@@ -4,7 +4,8 @@
 
 .hero-container {
   background-image: url("../assets/hero-bg.png");
-  @apply relative text-black bg-gray-50 xl:px-40 lg:px-36 px-20 font-serif  min-h-[768px] 2xl:min-h-[770px] h-screen;
+  @apply relative text-black bg-gray-50 xl:px-40 lg:px-36 px-20 lg:pt-12;
+  @apply font-serif  min-h-[768px] 2xl:min-h-[770px] h-screen;
   @apply flex flex-col justify-center items-center gap-6 mx-0 ;
 }
 
