@@ -1,14 +1,11 @@
-import { useState, useEffect } from "react";
-import "./App.css";
+import { useEffect } from 'react';
 
-import Home from "./pages/Home.jsx";
-
+import './App.css';
+import Home from './pages/Home.jsx';
 
 function App() {
   useEffect(() => {
     window.scrollTo(0, 0);
-
-    
   }, []);
 
   return (

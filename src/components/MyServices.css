@@ -10,7 +10,7 @@
 }
 
 .ani-canvas-1 {
-    @apply w-full md:w-1/2 h-full rotate-[-4deg] absolute top-auto right-auto left-auto opacity-50;
+    @apply w-full md:w-1/2 h-full rotate-[-4deg] absolute top-5 right-auto left-auto opacity-50;
 }
 
 .ani-canvas-2 {

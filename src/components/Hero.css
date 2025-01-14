@@ -22,7 +22,7 @@
 }
 
 .title-line {
-  @apply block text-[25vw] pt-12 text-nowrap;
+  @apply block text-[25vw] lg:text-[22vw] pt-12 text-nowrap;
   @apply font-humane font-normal leading-[0.6] mt-0 mb-0;
 }
 
@@ -32,15 +32,15 @@
 }
 
 .hero-greeting {
-  @apply text-6xl font-normal self-stretch m-0;
+  @apply text-5xl lg:text-6xl font-normal self-stretch m-0;
 }
 
 .hero-info {
-  @apply lg:text-4xl text-3xl  font-medium self-stretch m-0 w-full;
+  @apply text-3xl lg:text-4xl xl:text-[40px] font-medium self-stretch m-0 w-full;
 }
 
 .hero-statement {
-  @apply lg:text-4xl text-3xl font-medium self-stretch m-0 text-right font-imbue;
+  @apply text-3xl lg:text-4xl xl:text-[40px] font-medium self-stretch m-0 text-right font-imbue;
 }
 
 
