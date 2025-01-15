@@ -9,13 +9,13 @@ const MyServices = () => {
       <div className="ani-canvas-1">
         <Canvas>
           <ambientLight />
-          <TextPathAnimation  scale={.23} />
+          <TextPathAnimation  speed={.017} />
         </Canvas>
       </div>
       <div className="ani-canvas-2">
         <Canvas>
           <ambientLight />
-          <TextPathAnimation scale={.23} />
+          <TextPathAnimation speed ={.01} />
         </Canvas>
       </div>
       <div className="vertical-text">Just About</div>

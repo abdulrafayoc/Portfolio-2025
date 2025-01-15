@@ -14,13 +14,13 @@ How can I help you? | \
 How can I help you? | \
 How can I help you? | \
 How can I help you? | \
- How can I help you? | ",
+How can I help you? | ",
   radiusX = 7,
   radiusY = 12,
   speed = 0.02,
   fontSize = 1,
   color = "white",
-  scale = .26, 
+  scale = .23, 
 }) => {
   const groupRef = useRef();
   const curve = new THREE.EllipseCurve(0, 0, radiusX, radiusY);
