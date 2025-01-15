@@ -26,8 +26,8 @@ const Nav = () => {
 
       {/* Popup Menu */}
       {isOpen && <div className="overlay" onClick={toggleMenu}></div>}
-      <div className={`popup-menu stack ${isOpen ? "open" : "closed"}`}>
-      </div>
+      {/* <div className={`popup-menu stack ${isOpen ? "open" : "closed"}`}>
+      </div> */}
       <div className={`popup-menu ${isOpen ? "open" : "closed"}`}>
       <div className="close-btn" onClick={toggleMenu}>
           <img className="menu-i" src={close} alt="menu" />
@@ -55,5 +55,4 @@ const Nav = () => {
     </>
   );
 };
-
 export default Nav;
