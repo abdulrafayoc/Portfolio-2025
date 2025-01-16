@@ -9,7 +9,7 @@ const MyServices = () => {
       <div className="ani-canvas-1">
         <Canvas>
           <ambientLight />
-          <TextPathAnimation  speed={.017} />
+          <TextPathAnimation  speed={.017} fontSize = {.7} />
         </Canvas>
       </div>
       <div className="ani-canvas-2">

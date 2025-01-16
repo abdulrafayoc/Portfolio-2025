@@ -18,7 +18,7 @@ How can I help you? | ",
   radiusX = 7,
   radiusY = 12,
   speed = 0.02,
-  fontSize = 1,
+  fontSize = .9,
   color = "white",
   scale = .23, 
 }) => {

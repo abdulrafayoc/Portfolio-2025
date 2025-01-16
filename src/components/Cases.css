@@ -10,7 +10,7 @@
 }
 
 .process-text {
-  @apply text-white text-3xl md:text-4xl pt-6 md:pt-9 font-imbue font-light;
+  @apply text-white text-3xl tracking-wide md:text-4xl pt-6 md:pt-9 font-imbue font-light;
 }
 
 .cases-wrapper {
