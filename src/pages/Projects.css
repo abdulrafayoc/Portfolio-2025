@@ -1,0 +1,47 @@
+/* Projects.css */
+.projects-container {
+    @apply bg-black text-white min-h-screen py-20;
+    background-image: url('../assets/serv-bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .filter-section ul {
+    @apply list-none p-0;
+  }
+  
+  .filter-section li {
+    @apply cursor-pointer text-lg font-imbue transition-colors duration-300;
+  }
+  
+  .filter-section li:hover {
+    @apply text-white;
+  }
+  
+  .filter-section li.text-gray-400 {
+    @apply text-gray-400;
+  }
+  
+  .filter-section li.text-white {
+    @apply text-white underline;
+  }
+  
+  .projects-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+  
+  .project-item img {
+    @apply w-full h-64 object-cover filter grayscale transition-all duration-300;
+  }
+  
+  .project-item:hover img {
+    @apply grayscale-0;
+  }
+  
+  .project-item h3 {
+    @apply text-2xl font-imbue mt-4;
+  }
+  
+  .project-item p {
+    @apply text-gray-400;
+  }

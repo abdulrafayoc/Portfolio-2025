@@ -16,7 +16,7 @@
 .menu-btn {
   background-image: url("../assets/quote-bg.png");
   @apply rounded-full mix-blend-difference cursor-pointer bg-gray-900 hover:bg-black;
-  @apply flex justify-center items-center w-12 h-12 md:w-16 md:h-16 z-10;
+  @apply flex justify-center items-center w-12 h-12 md:w-16 md:h-16 z-10 cursor-pointer;
 }
 
 .menu-i {
@@ -64,7 +64,7 @@
 }
 
 .menu-title {
-  @apply w-full flex flex-row justify-between gap-6 sm:gap-8 text-[42px] sm:text-5xl lg:text-6xl mb-4 pr-0 sm:pr-12;
+  @apply w-full flex flex-row justify-between gap-6 sm:gap-8 text-[42px] sm:text-5xl lg:text-6xl mb-4 pr-0 sm:pr-12 cursor-pointer;
 }
 
 .menu-title div {

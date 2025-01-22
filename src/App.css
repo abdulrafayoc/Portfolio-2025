@@ -51,6 +51,10 @@
   border-radius: 10px; /* Rounded edges for the track */
 }
 
+::selection {
+  background-color: gray;
+}
+
 body {
   font-family: 'Imbue', serif;
   @apply bg-black;
