@@ -3,36 +3,43 @@
   font-family: 'Imbue';
   src: local("Imbue"), url("./assets/fonts/Imbue-VariableFont_opsz,wght.ttf") format("truetype");  
   font-style: normal;
+  unicode-range: U+0020-007F;
 }
 
 @font-face {
   font-family: 'DM Sans';
   src: local("DM Sans"), url("./assets/fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");  
   font-style: normal;
+  unicode-range: U+0020-007F;
 }
 
-@font-face {
+
+/* @font-face {
   font-family: 'DM Sans';
   src: local("DM Sans"), url("./assets/fonts/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
   font-style: italic;
-}
+  unicode-range: U+0020-007F;
+} */
 
 @font-face {
   font-family: 'Space Mono';
   src: local("Space Mono"), url("./assets/fonts/SpaceMono-Regular.ttf") format("truetype");  
   font-style: normal;
+  unicode-range: U+0020-007F;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Space Mono";
   src: local("Space Mono"), url("./assets/fonts/SpaceMono-Italic.ttf") format("truetype");
   font-style: italic;
-}
+  unicode-range: U+0020-007F;
+} */
 
 @font-face {
   font-family: 'Humane';
   src: local("Humane-Medium"), url("./assets/fonts/Humane-Medium.ttf") format("truetype");  
   font-style: normal;
+  unicode-range: U+0020-007F;
 }
 
 /* Custom Scrollbar Styles */
@@ -53,9 +60,11 @@
 
 ::selection {
   background-color: gray;
+  unicode-range: U+0020-007F;
 }
 
 body {
   font-family: 'Imbue', serif;
   @apply bg-black;
+  unicode-range: U+0020-007F;
 }

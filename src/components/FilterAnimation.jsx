@@ -1,9 +1,13 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 // SVG Filters Component (include once in your app)
 export const SVGFilters = () => (
-  <svg style={{ display: 'none' }}>
+  <svg style={{ display: "none" }}>
     <defs>
       <filter id="goo-1">
         <feGaussianBlur in="SourceGraphic" stdDeviation="0" result="blur" />
@@ -30,7 +34,12 @@ export const SVGFilters = () => (
           seed="2"
           result="noise"
         />
-        <feDisplacementMap in="goo" in2="noise" scale="0" result="displacement" />
+        <feDisplacementMap
+          in="goo"
+          in2="noise"
+          scale="0"
+          result="displacement"
+        />
         <feComposite in="SourceGraphic" in2="displacement" operator="atop" />
       </filter>
       <filter id="goo-3">
@@ -48,7 +57,12 @@ export const SVGFilters = () => (
           seed="2"
           result="noise"
         />
-        <feDisplacementMap in="goo" in2="noise" scale="0" result="displacement" />
+        <feDisplacementMap
+          in="goo"
+          in2="noise"
+          scale="0"
+          result="displacement"
+        />
         <feComposite in="SourceGraphic" in2="displacement" operator="atop" />
       </filter>
       <filter id="goo-4">
@@ -66,7 +80,12 @@ export const SVGFilters = () => (
           seed="1"
           result="noise"
         />
-        <feDisplacementMap in="goo" in2="noise" scale="0" result="displacement" />
+        <feDisplacementMap
+          in="goo"
+          in2="noise"
+          scale="0"
+          result="displacement"
+        />
         <feComposite in="SourceGraphic" in2="displacement" operator="atop" />
       </filter>
       <filter id="goo-5">
@@ -84,7 +103,12 @@ export const SVGFilters = () => (
           seed="1"
           result="noise"
         />
-        <feDisplacementMap in="goo" in2="noise" scale="0" result="displacement" />
+        <feDisplacementMap
+          in="goo"
+          in2="noise"
+          scale="0"
+          result="displacement"
+        />
         <feComposite in="SourceGraphic" in2="displacement" operator="atop" />
       </filter>
       <filter id="goo-6">
@@ -102,7 +126,12 @@ export const SVGFilters = () => (
           seed="1"
           result="noise"
         />
-        <feDisplacementMap in="goo" in2="noise" scale="0" result="displacement" />
+        <feDisplacementMap
+          in="goo"
+          in2="noise"
+          scale="0"
+          result="displacement"
+        />
         <feComposite in="SourceGraphic" in2="displacement" operator="atop" />
       </filter>
       <filter id="goo-7">
@@ -120,14 +149,18 @@ export const SVGFilters = () => (
           seed="1"
           result="noise"
         />
-        <feDisplacementMap in="goo" in2="noise" scale="0" result="displacement" />
+        <feDisplacementMap
+          in="goo"
+          in2="noise"
+          scale="0"
+          result="displacement"
+        />
         <feComposite in="SourceGraphic" in2="displacement" operator="atop" />
       </filter>
     </defs>
   </svg>
 );
-
-const FilterAnimation = ({ text, filterId = 'goo-2' }) => {
+const FilterAnimation = ({ text, filterId = "goo-2" }) => {
   const textRef = useRef(null);
   const timeline = useRef(null);
 
@@ -137,60 +170,63 @@ const FilterAnimation = ({ text, filterId = 'goo-2' }) => {
 
     // Filter elements
     const feBlur = document.querySelector(`#${filterId} feGaussianBlur`);
-    const feTurbulence = document.querySelector(`#${filterId} feTurbulence`);
     const feDisplacementMap = document.querySelector(`#${filterId} feDisplacementMap`);
 
     if (!feBlur || !feDisplacementMap) {
-      console.warn('Filter elements not found');
+      console.warn("Filter elements not found");
       return;
     }
 
     // Animation values
-    const primitiveValues = {
-      stdDeviation: 30,
-      scale: 100,
-      baseFrequency: 0.1,
-    };
+    const primitiveValues = { stdDeviation: 0, scale: 0 };
 
-    // Set initial values
-    gsap.set(primitiveValues, {
-      stdDeviation: 30,
-      scale: 100,
-      baseFrequency: 0.1,
-    });
+    // Set initial opacity to 0
+    gsap.set(textElement, { opacity: 0});
 
     // Create animation timeline
     timeline.current = gsap.timeline({
+      defaults: { duration: 1, ease: "power4.out" },
       onUpdate: () => {
-        feBlur.setAttribute('stdDeviation', primitiveValues.stdDeviation);
-        feDisplacementMap.setAttribute('scale', primitiveValues.scale);
-        if (feTurbulence) {
-          feTurbulence.setAttribute('baseFrequency', primitiveValues.baseFrequency);
-        }
+        // Update SVG filter attributes
+        feBlur.setAttribute("stdDeviation", primitiveValues.stdDeviation);
+        feDisplacementMap.setAttribute("scale", primitiveValues.scale);
       },
-    }).to(primitiveValues, {
-      stdDeviation: 0,
-      scale: 0,
-      baseFrequency: 0.05,
-      duration: 1.5,
-      ease: 'power6.out',
-    });
-
-    timeline.current.play();
+      scrollTrigger: {
+        trigger: textElement, // Trigger the animation when the text enters the viewport
+        // start: "top 100%", // Adjust this value to control when the animation starts
+        end: "top 65%", // Adjust this value to control when the animation ends
+        scrub: 1, // Smoothly scrub through the animation on scroll
+        
+      },
+    })
+      .to(primitiveValues, {
+        stdDeviation: 50, // Start with a strong blur
+        scale: 100, // Start with a high displacement
+      })
+      .to(primitiveValues, {
+        stdDeviation: 0, // End with no blur
+        scale: 0, // End with no displacement
+      })
+      .to(
+        textElement,
+        {
+          opacity: 1, // Fade in the text
+        },
+        0
+      );
 
     return () => {
-      timeline.current.kill();
+      timeline.current.kill(); // Clean up the timeline on unmount
     };
-  }, [filterId]);
+  }, []);
 
   return (
-    <h2
+    <div
       ref={textRef}
-      style={{ filter: `url(#${filterId})`, cursor: 'pointer' }}
-      className="animated-text font-imbue font-black"
+      style={{ filter: `url(#${filterId})` }}
     >
       {text}
-    </h2>
+    </div>
   );
 };
 
