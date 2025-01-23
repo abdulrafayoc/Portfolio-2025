@@ -2,7 +2,7 @@
 .projects-container {
     @apply bg-black text-white min-h-screen py-20;
     background-image: url('../assets/serv-bg.png');
-    background-size: cover;
+    
     background-position: center;
   }
   
@@ -18,11 +18,11 @@
     @apply text-white;
   }
   
-  .filter-section li.text-gray-400 {
+  .filter-section li {
     @apply text-gray-400;
   }
   
-  .filter-section li.text-white {
+  .filter-section li {
     @apply text-white underline;
   }
   

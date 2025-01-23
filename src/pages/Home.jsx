@@ -10,7 +10,7 @@ import Footer from "../components/Footer.jsx";
 const Home = () => {
   return (
     <div className="home-container">
-      <Nav />
+      {/* <Nav /> */}
       <Hero />
       <MyServices />
       <Cases />

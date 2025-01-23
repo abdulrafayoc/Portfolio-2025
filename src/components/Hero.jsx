@@ -2,6 +2,8 @@ import React from "react";
 import "./Hero.css";
 import { useMediaQuery } from "react-responsive";
 import splash from "../assets/splash-1.png";
+import {SVGFilters} from "./FilterAnimation";
+import FilterAnimation from "./FilterAnimation";
 
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
@@ -30,6 +32,12 @@ const Hero = () => {
 
   const DesktopHero = () => (
     <div className="hero-container">
+      
+      <SVGFilters />
+      <div style={{ padding: '100px', fontSize: '15rem' }}>
+        <FilterAnimation text="Hover Me" filterId="goo-6" />
+      
+    </div>
       <img src={splash} alt="Splash" className="hero-splash" />
       <div className="hero-title">
         <span className="title-line">WEB DESIGNER</span>
