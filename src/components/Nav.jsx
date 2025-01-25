@@ -36,7 +36,7 @@ const Nav = () => {
           <h1 className="menu-title">
             <div>HOME</div>
             <div onClick={() => window.location.href = "/about"}>ABOUT</div> 
-            <div>WORK<sup>6</sup></div>
+            <div onClick={() => window.location.href = "/projects"}>WORK<sup>6</sup></div>
           </h1>
           <p className="socials-heading">Socials</p>
           <div className="social-links-nav">

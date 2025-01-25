@@ -60,11 +60,10 @@
 
 ::selection {
   background-color: gray;
-  unicode-range: U+0020-007F;
 }
 
 body {
   font-family: 'Imbue', serif;
   @apply bg-black;
-  unicode-range: U+0020-007F;
+  user-select: none;
 }

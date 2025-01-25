@@ -92,17 +92,35 @@
 }
 
 @keyframes vibrate {
-  0% { transform: translate(0, 0); filter: blur(.7px); }
-  20% { transform: translate(-.5px, -1px); filter: blur(.7px); }
-  50% { transform: translate(.5px, 1px); filter: blur(.7px); }
-  75% { transform: translate(-1px, .5px); filter: blur(.7px); }
-  100% { transform: translate(1px, -.5px); filter: blur(.7px); }
+  0% {
+    transform: translate(0, 0);
+    filter: blur(0.5px);
+  }
+  25% {
+    transform: translate(-0.5px, -0.5px);
+    filter: blur(0.5px);
+  }
+  50% {
+    transform: translate(0.5px, 0.5px);
+    filter: blur(0.5px);
+  }
+  75% {
+    transform: translate(-0.5px, 0.5px);
+    filter: blur(0.5px);
+  }
+  100% {
+    transform: translate(0.5px, -0.5px);
+    filter: blur(0.5px);
+  }
 }
 
+.menu-title div:hover {
+  animation: vibrate 0.15s linear infinite;
+}
 .menu-title div:hover {
   animation: vibrate 0.1s infinite;
 }
 
-/* .social-links-nav div:hover {
+.social-links-nav div:hover {
   animation: vibrate 0.1s infinite;
-} */
+}
