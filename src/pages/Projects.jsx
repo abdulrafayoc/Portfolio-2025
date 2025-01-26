@@ -45,6 +45,10 @@ const Projects = () => {
         {/* Projects Grid */}
         <div className="projects-grid">
             <ProjectItem image={project1} title="Project 1" description="Description 1" year="2023" counter="1" />
+            <ProjectItem image={project1} title="Project 1" description="Description 1" year="2023" counter="1" />
+            <ProjectItem image={project1} title="Project 1" description="Description 1" year="2023" counter="1" />
+            <ProjectItem image={project1} title="Project 1" description="Description 1" year="2023" counter="1" />
+            <ProjectItem image={project1} title="Project 1" description="Description 1" year="2023" counter="1" />
           
         </div>
       </div>
