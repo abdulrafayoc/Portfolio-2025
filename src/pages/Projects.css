@@ -1,4 +1,4 @@
-/* Projects.css */
+
 
 .projects-container {
   background-image: url('../assets/serv-bg.png');
@@ -35,6 +35,8 @@
 
 .project-item img {
   @apply w-full h-64 object-cover filter grayscale transition-all duration-300;
+  object-fit: cover; /* Maintain aspect ratio */
+  aspect-ratio: 1 / 1; /* Set a consistent aspect ratio */
 }
 
 .project-item.group:hover img {
